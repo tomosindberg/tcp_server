@@ -10,21 +10,13 @@ chai.use(chaiHttp);
 //   });
 // });
 
-
-// describe('time', function() {
-//   it('should change the data from CPalette', function() {
-//     expect(colPalette.darken[0]).to.not.eql(0);
-//     console.log('color change test');
+// chai.request('localhost:3000')
+//   .get('/')
+//   // .put('/greet/tomo')
+//   .send({ person: 'tomo', })
+//   .then(function (res){
+//     expect(res).to.have.status(200);
+//   })
+//   .catch(function(err) {
+//     throw err;
 //   });
-// });
-
-chai.request('localhost:3000')
-  .get('/')
-  // .put('/greet/tomo')
-  .send({ person: 'tomo', })
-  .then(function (res){
-    expect(res).to.have.status(200);
-  })
-  .catch(function(err) {
-    throw err;
-  });
